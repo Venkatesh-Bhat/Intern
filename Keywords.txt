@@ -1,0 +1,25 @@
+Keywords:
+Single Instructions
+Terminators
+
+IDE Editors:
+VS code
+
+Mandatory for Web Development:
+Browser
+
+Command Line Interface (CLI):
+PowerShell
+npm
+Git bash
+Windows Shell
+
+Documentations:
+mdn
+Frontend Masters
+
+Java & JS
+COBOL and GO
+
+Initialize git:
+git init
