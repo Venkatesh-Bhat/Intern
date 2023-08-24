@@ -1,0 +1,45 @@
+#navbar {
+    display: flex;
+    justify-content: end;
+    background-color: #ffef96;
+    padding: 8px;
+}
+#navbar a{
+    text-decoration: none;
+    margin: 0 10px;
+    color:black;
+    padding: 7px;
+}
+#navbar a:hover{
+    background-color:black;
+    color:#ffef96;
+}
+
+#clg-title{
+    font-weight:bolder;
+    background-color: rgba(80, 57, 76,0.6);
+    color:white;
+    display: block; 
+}
+
+.clg-name{
+    font-size:xx-large;
+    margin-bottom:0;
+    padding-bottom: 0;
+}
+.clg-name p{
+    margin-top: 0;
+    padding-top: 0;
+}
+section{
+    display:flex;
+    justify-content: space-evenly;
+    border-bottom: 1pt solid #ffef96;
+    padding: 10px;
+}
+
+img{
+    width:200px;
+    margin:5px 10px;
+    border-radius: 20px;
+}

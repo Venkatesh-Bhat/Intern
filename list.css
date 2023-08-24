@@ -23,7 +23,9 @@ img{
 body{
     background: url('./back.jpg');
     text-decoration: none;
-    color:aquamarine;
+    color:black;
+    font-weight: 900;
+    
 }
 
 a,li>a:visited{
