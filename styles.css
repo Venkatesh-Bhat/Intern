@@ -51,3 +51,33 @@ footer>a:hover{
     text-decoration: none;
     color:darksalmon;
 }
+
+/* nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    background-color: bisque;
+    padding:6px;
+}
+
+nav a,nav a:active{
+    text-decoration: none;
+    color:chocolate;
+} */
+
+nav{
+    width: 100%;
+    background-color: bisque;
+    padding: 6px;
+    justify-content: end;
+    display: flex;
+}
+nav a,nav a:active{
+    padding: 10px;
+    text-decoration: none;
+    color:chocolate;
+}
+
+nav a:hover{
+    background-color: burlywood;
+}
