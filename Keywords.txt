@@ -26,3 +26,10 @@ git init
 
 Icons in html:
 <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+Basic Sections of Document:
+header
+navigation background
+main content
+sidebar/aside
+footer

@@ -1,45 +1,123 @@
 #navbar {
-    display: flex;
-    justify-content: end;
-    background-color: #ffef96;
-    padding: 8px;
+  display: flex;
+  justify-content: end;
+  background-color: #ffef96;
+  padding: 5px;
+  position: fixed;
+  width: 100%;
+  top: 0%;
+  left: 0%;
+  z-index: auto;
+  opacity: 0.8;
 }
-#navbar a{
-    text-decoration: none;
-    margin: 0 10px;
-    color:black;
-    padding: 7px;
+#navbar a {
+  text-decoration: none;
+  margin: 0 20px;
+  color: black;
+  padding: 7px;
 }
-#navbar a:hover{
-    background-color:black;
-    color:#ffef96;
-}
-
-#clg-title{
-    font-weight:bolder;
-    background-color: rgba(80, 57, 76,0.6);
-    color:white;
-    display: block; 
-}
-
-.clg-name{
-    font-size:xx-large;
-    margin-bottom:0;
-    padding-bottom: 0;
-}
-.clg-name p{
-    margin-top: 0;
-    padding-top: 0;
-}
-section{
-    display:flex;
-    justify-content: space-evenly;
-    border-bottom: 1pt solid #ffef96;
-    padding: 10px;
+#navbar a:hover {
+  background-color: black;
+  color: #ffef96;
 }
 
-img{
-    width:200px;
-    margin:5px 10px;
-    border-radius: 20px;
+#clg-title {
+  font-weight: bolder;
+  background-color: rgba(80, 57, 76, 0.5);
+  color: white;
+  display: block;
+  margin-top: 50px;
+  padding: 20px;
+  z-index: 1;
+}
+
+.clg-name {
+  font-size: xx-large;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+#clg-title p {
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-weight: lighter;
+}
+.description {
+  margin-left: 5%;
+  z-index: 20;
+  padding: 10px 10px;
+  background-color: #fefbd8;
+}
+section {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1pt solid lightgray;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding: 0 5px;
+}
+.description header {
+  font-weight: bolder;
+  font-size: xx-large;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding: 10px;
+  background-color: rgba(178, 178, 178, 0.8);
+}
+img {
+  width: 200px;
+  margin: 5px 10px;
+  border-radius: 20px;
+}
+
+aside {
+  position: fixed;
+  display: flex;
+  align-items: start;
+}
+aside ul {
+  left: 0%;
+  margin: 0%;
+  padding: 0;
+}
+aside ul > li {
+  list-style-type: none;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
 }
