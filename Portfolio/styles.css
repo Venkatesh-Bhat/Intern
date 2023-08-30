@@ -140,6 +140,8 @@ body {
 hr {
   border: 1px solid #0ef;
   margin: 10px 0;
+  animation: slideDown 5s ease forwards;
+  animation-delay: 0s;
 }
 
 @keyframes slideLeftSocial {
