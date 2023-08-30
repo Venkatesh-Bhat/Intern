@@ -12,6 +12,7 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <title>Personal Portfolio</title>
   </head>
   <body>
@@ -36,7 +37,22 @@
         </p>
       </div>
       <hr />
+      <div class="about" id="about-container">
+        <header>
+          About Me<br />
+          <p>(Click question-mark)</p>
+        </header>
+        <box-icon name="question-mark" color="#32f5f2" id="icon"></box-icon>
+        <div
+          class="layer"
+          id="layerId"
+          style="display: none; background: #32f5f2; padding: 4px"
+        >
+          <h1>Just Messing With You :)</h1>
+        </div>
+      </div>
       <div class="skills">
+        <hr />
         <header id="title">Skills</header>
         <span class="skill" id="java">
           <header>
@@ -98,9 +114,25 @@
   <script>
     var typed = new Typed("#name", {
       strings: ["FrontEnd", "BackEnd", "Full-Stack Developer"],
-      typeSpeed: 200,
+      typeSpeed: 100,
       backSpeed: 100,
       backDelay: 100,
+    });
+
+    const boxIcon = document.getElementById("icon");
+    let count = 0;
+    boxIcon.addEventListener("click", () => {
+      const about = boxIcon.closest(".about");
+      const layer = about.querySelector(".layer");
+
+      if (count < 2) {
+        count++;
+        about.classList.toggle("flipped");
+      } else {
+        layer.style.display = "block";
+        about.querySelector("header").style.display = "none";
+        boxIcon.style.display = "none";
+      }
     });
   </script>
 </html>
