@@ -100,11 +100,40 @@ body {
   color: black;
   box-shadow: 0 0 20px #32f5f2;
 }
-.skills {
-  display: block;
+#title {
+  font-size: 30px;
+}
+.skill header {
+  font-size: 20px;
+  padding: 20px;
+}
+.skill {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1pt solid #0ef;
+  margin-bottom: 8px;
+  padding: 10px;
+}
+#java {
+  animation: slideRight 7s ease forwards;
+  animation-delay: 0s;
+}
+#python {
+  animation: slideLeft 7s ease forwards;
+  animation-delay: 0s;
+}
+#react {
+  animation: slideRight 7s ease forwards;
+  animation-delay: 0s;
+}
+#node {
+  animation: slideLeft 7s ease forwards;
+  animation-delay: 0s;
 }
 hr {
-  color: #0ef;
+  border: 1px solid #0ef;
+  margin: 10px 0;
 }
 
 @keyframes slideLeft {
@@ -124,6 +153,16 @@ hr {
   }
   100% {
     transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
     opacity: 1;
   }
 }
