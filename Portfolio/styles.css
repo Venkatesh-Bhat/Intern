@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", "sans-serif";
+}
+
+body {
+  color: #ededed;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  animation: slideDown 3s ease forwards;
+  animation-delay: 0s;
+}
+
+.logo {
+  position: relative;
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar a {
+  display: inline-block;
+  font-size: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #0ef;
+}
+
+.fa {
+  color: #0ef;
+  font-size: 30px;
+  width: 40px;
+}
+
+.home {
+  position: relative;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+  background: url("https://wallpapers.com/images/featured/goku-black-pfp-tkvb2cm72fq9pd34.jpg");
+  background-size: cover;
+  padding: 70px 10% 0;
+}
+
+.home-content {
+  margin-top: 50px;
+  max-width: 600px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.home-content h1 {
+  font-size: 35px;
+  margin-bottom: 5px;
+}
+#name {
+  color: #32f5f2;
+}
+
+.social {
+  position: fixed;
+  align-items: end;
+  margin: 80px 20px 0;
+  top: 0;
+  right: 0;
+  animation: slideLeft 3s ease forwards;
+  animation-delay: 0s;
+}
+
+.social a {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  color: #32f5f2;
+  margin-bottom: 10px;
+  border: 1pt solid #32f5f2;
+  border-radius: 50%;
+  padding: 10px;
+  background: transparent;
+}
+.social a:hover {
+  background: #32f5f2;
+  color: black;
+  box-shadow: 0 0 20px #32f5f2;
+}
+.skills {
+  display: block;
+}
+hr {
+  color: #0ef;
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}

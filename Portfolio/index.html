@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Personal Portfolio</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">Portfolio<i class="fa fa-hand-peace-o"></i></a>
+      <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <!-- <a href="#">Services -->
+        <a href="#">Skills</a>
+        <a href="#">Project</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+    <section class="home">
+      <div class="home-content">
+        <h3>Hello, my name is</h3>
+        <h1>Venkatesh Bhat</h1>
+        <p>
+          I'm a passionate <span id="name"></span> who loves to code in my free
+          time.
+        </p>
+      </div>
+      <hr />
+      <div class="skills">
+        <header>Skills</header>
+        <span class="skill">
+          <header>Java</header>
+        </span>
+        <span class="skill">
+          <header>Python</header>
+        </span>
+        <span class="skill">
+          <header>React</header>
+        </span>
+        <span class="skill">
+          <header>Node</header>
+        </span>
+      </div>
+      <aside class="social">
+        <a><i class="bx bxl-facebook"></i></a>
+        <a><i class="bx bxl-instagram"></i></a>
+        <a><i class="bx bxl-twitter"></i></a>
+        <a><i class="bx bxl-youtube"></i></a>
+        <a><i class="bx bxl-linkedin"></i></a>
+        <a><i class="bx bxl-github"></i></a>
+      </aside>
+    </section>
+  </body>
+
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed("#name", {
+      strings: ["FrontEnd", "BackEnd", "Full-Stack Developer"],
+      typeSpeed: 100,
+      backSpeed: 100,
+      backDelay: 100,
+    });
+  </script>
+</html>
