@@ -1,0 +1,24 @@
+div {
+  max-width: 200px;
+  width: 100%;
+  margin: 50px auto;
+  border: 1pt solid black;
+  height: 100px;
+}
+
+div[class="one"] {
+  background-color: aqua;
+  text-align: center;
+}
+
+div[class="two"] #twoHead {
+  background-color: blue;
+  text-align: center;
+}
+div[class^="t"] {
+  text-align: center;
+  background-color: yellow;
+}
+div[class="four"] {
+  background-color: #f00;
+}
