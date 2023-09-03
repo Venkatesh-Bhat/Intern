@@ -111,7 +111,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: aquamarine;
+
   background: transparent;
 }
 .about header {
@@ -129,17 +129,21 @@ body {
   width: 200px;
   height: 200px;
 }
-
+.layer {
+  display: none;
+  background-color: rgba(211, 211, 211, 0.24);
+  font-size: 20px;
+  font-family: "Source Code Pro", monospace;
+  color: #32f5f2;
+}
 .about.flipped {
   flex-direction: row-reverse; /* Flip the positions */
 }
-.about.layer {
-  color: #32f5f2;
-}
 
 .skills {
-  width: 75%;
   margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 #title {
   font-size: 30px;
@@ -150,32 +154,32 @@ body {
   padding: 20px;
 }
 .skill {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: auto;
   align-items: center;
+  text-align: justify;
   border: 1pt solid #0ef;
-  margin-bottom: 8px;
+  margin: 8px;
   padding: 10px;
+}
+.skill svg {
+  margin: auto;
 }
 .skill:hover {
   background-color: #32f5f2;
   color: black;
   box-shadow: 0 0 20px #32f5f2;
 }
-#java {
-  animation: slideRight 7s ease forwards;
-  animation-delay: 0s;
-}
-#python {
+.one {
   animation: slideLeft 7s ease forwards;
   animation-delay: 0s;
 }
-#react {
+.three {
   animation: slideRight 7s ease forwards;
   animation-delay: 0s;
 }
-#node {
-  animation: slideLeft 7s ease forwards;
+.two {
+  animation: slideDown 7s ease forwards;
   animation-delay: 0s;
 }
 hr {
