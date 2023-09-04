@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "poppins", "sans-serif";
 }
 
 body {
@@ -66,12 +65,13 @@ body {
 }
 
 .home-content {
-  margin-top: 50px;
+  margin: 250px 0 250px;
   max-width: 600px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Black Ops One", cursive;
 }
 .home-content h1 {
   font-size: 35px;
+  line-height: 1.5;
   margin-bottom: 5px;
 }
 #name {
@@ -82,6 +82,7 @@ body {
   position: fixed;
   align-items: end;
   margin: 80px 20px 0;
+  padding: 10px;
   top: 0;
   right: 0;
   animation: slideLeftSocial 3s ease forwards;
@@ -99,6 +100,23 @@ body {
   padding: 10px;
   background: transparent;
 }
+
+.change-color {
+  background: #32f5f2;
+  opacity: 0.8;
+  padding: 10px;
+  border-radius: 50px;
+  box-shadow: 0 0 20px #32f5f2;
+}
+
+.change-color a {
+  color: #32f5f2;
+  border: 1pt solid black;
+  border-radius: 50%;
+  padding: 10px;
+  background: #000;
+}
+
 .social a:hover {
   background: #32f5f2;
   color: black;
@@ -111,7 +129,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-
+  padding-top: 50px;
   background: transparent;
 }
 .about header {
@@ -134,7 +152,8 @@ body {
   background-color: rgba(211, 211, 211, 0.24);
   font-size: 20px;
   font-family: "Source Code Pro", monospace;
-  color: #32f5f2;
+  color: #fcfdfd;
+  padding: 10px;
 }
 .about.flipped {
   flex-direction: row-reverse; /* Flip the positions */
@@ -148,6 +167,9 @@ body {
 #title {
   font-size: 30px;
   color: #32f5f2;
+  padding-top: 10px;
+  margin: 50px 0 10px;
+  font-family: "Source Code Pro";
 }
 .skill header {
   font-size: 20px;
@@ -163,13 +185,21 @@ body {
   padding: 10px;
 }
 .skill svg {
-  margin: auto;
+  margin: 10px auto;
 }
 .skill:hover {
   background-color: #32f5f2;
   color: black;
   box-shadow: 0 0 20px #32f5f2;
 }
+/* .skill:nth-child(odd) {
+  border: 2pt solid #ef0107;
+  border-top: none;
+}
+.skill:nth-child(even) {
+  border: 2pt solid #7df9ff;
+  border-bottom: none;
+} */
 .one {
   animation: slideLeft 7s ease forwards;
   animation-delay: 0s;
@@ -187,6 +217,136 @@ hr {
   margin: 10px 0;
   animation: slideDown 5s ease forwards;
   animation-delay: 0s;
+}
+
+.progress2 {
+  border-radius: 30px;
+  background-color: #fff;
+  margin-bottom: 6px;
+}
+
+.progress-bar2 {
+  height: 18px;
+  border-radius: 30px;
+  transition: 0.4s linear;
+  transition-property: width, background-color;
+}
+.java,
+.python,
+.cpp,
+.node,
+.react,
+.ruby {
+  transition: 0.4s linear;
+  transition-property: width, background-color;
+}
+.progress-moved .java {
+  background-color: #fff;
+  animation: progress 5s ease forwards;
+  animation-delay: 7s;
+}
+
+@keyframes progress {
+  0% {
+    width: 0%;
+    background: #000;
+  }
+
+  100% {
+    width: 75%;
+    background-color: #32f5f2;
+    box-shadow: 0 0 40px #0ef;
+  }
+}
+.progress-moved .python {
+  background-color: #fff;
+  animation: progressPy 5s ease forwards;
+  animation-delay: 7s;
+}
+
+@keyframes progressPy {
+  0% {
+    width: 0%;
+    background: #000;
+  }
+
+  100% {
+    width: 95%;
+    background-color: #32f5f2;
+    box-shadow: 0 0 40px #0ef;
+  }
+}
+.progress-moved .react {
+  background-color: #fff;
+  animation: progressReact 5s ease forwards;
+  animation-delay: 7s;
+}
+
+@keyframes progressReact {
+  0% {
+    width: 0%;
+    background: #000;
+  }
+
+  100% {
+    width: 40%;
+    background-color: #32f5f2;
+    box-shadow: 0 0 40px #0ef;
+  }
+}
+.progress-moved .node {
+  background-color: #fff;
+  animation: progressNode 5s ease forwards;
+  animation-delay: 7s;
+}
+
+@keyframes progressNode {
+  0% {
+    width: 0%;
+    background: #000;
+  }
+
+  100% {
+    width: 35%;
+    background-color: #32f5f2;
+    box-shadow: 0 0 40px #0ef;
+  }
+}
+.progress-moved .cpp {
+  background-color: #fff;
+  animation: progressCpp 5s ease forwards;
+  animation-delay: 7s;
+}
+
+@keyframes progressCpp {
+  0% {
+    width: 0%;
+    background: #000;
+  }
+
+  100% {
+    width: 87%;
+    background-color: #32f5f2;
+    box-shadow: 0 0 40px #0ef;
+  }
+}
+.progress-moved .ruby {
+  background-color: #fff;
+  animation: progressRuby 5s ease forwards;
+  animation-delay: 7s;
+}
+
+@keyframes progressRuby {
+  0% {
+    width: 0%;
+    background: #000;
+  }
+
+  100% {
+    width: 15%;
+    background-color: #32f5f2;
+    box-shadow: 0 0 40px #0ef;
+  }
 }
 
 @keyframes slideLeftSocial {

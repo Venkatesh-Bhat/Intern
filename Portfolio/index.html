@@ -9,6 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
@@ -26,11 +30,9 @@
       <a href="#" class="logo">Portfolio<i class="fa fa-hand-peace-o"></i></a>
       <nav class="navbar">
         <a href="#">Home</a>
-        <a href="#">About</a>
-        <!-- <a href="#">Services -->
-        <a href="#">Skills</a>
-        <a href="#">Project</a>
-        <a href="#">Contact</a>
+        <a href="#about-line">About</a>
+        <a href="#title-line">Skills</a>
+        <a id="contact" href="#">Contact</a>
       </nav>
     </header>
     <section class="home">
@@ -42,7 +44,7 @@
           time.
         </p>
       </div>
-      <hr />
+      <hr id="about-line" />
       <div class="about" id="about-container">
         <header>
           About Me<br />
@@ -50,6 +52,7 @@
         </header>
         <box-icon name="question-mark" color="#32f5f2" id="icon"></box-icon>
         <div class="layer" id="layerId">
+          <h1>About Me</h1>
           <p>
             I am a full stack developer with a passion for creating web
             applications that are user-friendly, scalable, and secure. I have
@@ -63,6 +66,7 @@
           </p>
         </div>
       </div>
+      <hr id="title-line" />
       <header id="title">Skills</header>
       <div class="skills">
         <span class="skill one" id="java">
@@ -106,6 +110,10 @@
             </g>
           </svg>
 
+          <div class="progress2 progress-moved">
+            <div class="progress-bar2 java"></div>
+          </div>
+
           <p>
             Java is a popular programming language that was created in 1995 by
             James Gosling at Sun Microsystems. It is widely used for developing
@@ -137,6 +145,11 @@
               d="M23.078,43c1.555-0.005,2.633-0.142,3.936-0.367c3.848-0.67,4.549-2.077,4.549-4.67V34h-9v-2h9.343	h4.35c2.636,0,4.943-1.242,5.674-4.219c0.826-3.417,0.863-5.557,0-9.125C41.274,15.995,39.831,14,37.194,14h-3.632v5.104	c0,2.966-2.686,5.896-5.764,5.896h-7.236c-2.523,0-5,1.862-5,4.377v8.586c0,2.439,1.759,4.263,4.218,4.672	C19.719,42.641,21.536,43.006,23.078,43z M28.063,39c-0.821,0-1.5-0.677-1.5-1.502c0-0.833,0.679-1.498,1.5-1.498	c0.837,0,1.5,0.664,1.5,1.498C29.563,38.32,28.899,39,28.063,39z"
             ></path>
           </svg>
+
+          <div class="progress2 progress-moved">
+            <div class="progress-bar2 python"></div>
+          </div>
+
           <p>
             Python is a high-level, interpreted, and general-purpose programming
             language that was created by Guido van Rossum in 1991. It is widely
@@ -177,6 +190,11 @@
               ></path>
             </g>
           </svg>
+
+          <div class="progress2 progress-moved">
+            <div class="progress-bar2 react"></div>
+          </div>
+
           <p>
             React is a JavaScript library that is used for building user
             interfaces for web applications. It was created by Facebook in 2013
@@ -207,15 +225,20 @@
               d="M28.856,32.937c-6.868,0-8.308-3.153-8.308-5.797c0-0.251,0.203-0.452,0.455-0.452h2.028	c0.224,0,0.413,0.163,0.448,0.384c0.306,2.066,1.218,3.108,5.371,3.108c3.308,0,4.715-0.747,4.715-2.502	c0-1.01-0.401-1.76-5.54-2.263c-4.299-0.424-6.955-1.371-6.955-4.809c0-3.167,2.672-5.053,7.147-5.053	c5.026,0,7.517,1.745,7.831,5.493c0.012,0.13-0.035,0.255-0.122,0.35c-0.086,0.09-0.208,0.145-0.334,0.145h-2.039	c-0.212,0-0.397-0.149-0.44-0.354c-0.491-2.173-1.678-2.868-4.904-2.868c-3.611,0-4.031,1.257-4.031,2.2	c0,1.143,0.495,1.477,5.367,2.122c4.825,0.64,7.116,1.544,7.116,4.935c0,3.418-2.853,5.379-7.827,5.379"
             ></path>
           </svg>
+
+          <div class="progress2 progress-moved">
+            <div class="progress-bar2 node"></div>
+          </div>
+
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-            animi nesciunt itaque fugiat. Perferendis, voluptate? Reiciendis
-            nostrum vitae quisquam est ratione voluptate sequi, officia
-            perspiciatis dolorem totam animi iste assumenda. Lorem ipsum dolor
-            sit amet consectetur adipisicing elit. Libero animi nesciunt itaque
-            fugiat. Perferendis, voluptate? Reiciendis nostrum vitae quisquam
-            est ratione voluptate sequi, officia perspiciatis dolorem totam
-            animi iste assumenda.
+            Node.js is a technology that allows developers to run JavaScript
+            code outside the browser. It is based on the V8 engine, which powers
+            Google Chrome and other web browsers. Node.js enables the creation
+            of fast and scalable web applications, such as APIs, web servers,
+            chatbots, and more1. Node.js is open-source and cross-platform,
+            meaning it can run on different operating systems and devices.
+            Node.js is also popular for its large and active community, which
+            contributes to its development and provides many useful modules.
           </p>
         </span>
         <span class="skill two" id="C++">
@@ -264,15 +287,21 @@
               clip-rule="evenodd"
             ></path>
           </svg>
+
+          <div class="progress2 progress-moved">
+            <div class="progress-bar2 cpp"></div>
+          </div>
+
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-            animi nesciunt itaque fugiat. Perferendis, voluptate? Reiciendis
-            nostrum vitae quisquam est ratione voluptate sequi, officia
-            perspiciatis dolorem totam animi iste assumenda. Lorem ipsum dolor
-            sit amet consectetur adipisicing elit. Libero animi nesciunt itaque
-            fugiat. Perferendis, voluptate? Reiciendis nostrum vitae quisquam
-            est ratione voluptate sequi, officia perspiciatis dolorem totam
-            animi iste assumenda.
+            C++ is a powerful and versatile programming language that was
+            created by Bjarne Stroustrup in 1985 as an extension of the C
+            language. It supports multiple paradigms, such as procedural,
+            object-oriented, generic, and functional programming, as well as
+            low-level memory manipulation. C++ is widely used for developing
+            systems software, applications, games, servers, and
+            performance-critical software. C++ is standardized by ISO and has
+            several versions, the latest being C++20. C++ is compiled and can
+            run on various platforms, such as Windows, Linux, and macOS.
           </p>
         </span>
         <span class="skill three" id="Ruby">
@@ -301,6 +330,9 @@
             ></path>
           </svg>
 
+          <div class="progress2 progress-moved">
+            <div class="progress-bar2 ruby"></div>
+          </div>
           <!-- <img
             width="100"
             height="100"
@@ -308,14 +340,14 @@
             alt="ruby-programming-language"
           /> -->
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-            animi nesciunt itaque fugiat. Perferendis, voluptate? Reiciendis
-            nostrum vitae quisquam est ratione voluptate sequi, officia
-            perspiciatis dolorem totam animi iste assumenda. Lorem ipsum dolor
-            sit amet consectetur adipisicing elit. Libero animi nesciunt itaque
-            fugiat. Perferendis, voluptate? Reiciendis nostrum vitae quisquam
-            est ratione voluptate sequi, officia perspiciatis dolorem totam
-            animi iste assumenda.
+            Ruby is a programming language that combines the best features of
+            other languages, such as Perl, Smalltalk, Eiffel, Ada, and Lisp.
+            Ruby is dynamic, open source, and object-oriented. It has a simple
+            and elegant syntax that makes it easy to read and write. Ruby also
+            has a large and active community that provides many useful modules
+            and frameworks1. Ruby is suitable for various purposes and domains,
+            such as web development, data analysis, testing, scripting, and
+            more2. Ruby is a language of careful balance and productivity.
           </p>
         </span>
       </div>
@@ -353,6 +385,21 @@
         about.querySelector("header").style.display = "none";
         boxIcon.style.display = "none";
       }
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const changeBackgroundLink = document.querySelector("#contact");
+      const elementToChange = document.querySelector(".social");
+
+      changeBackgroundLink.addEventListener("click", function (e) {
+        e.preventDefault(); // Prevent the default behavior of the anchor tag
+        elementToChange.classList.add("change-color"); // Add the CSS class to change the background
+
+        // Set a timeout to remove the class after 5 seconds
+        setTimeout(function () {
+          elementToChange.classList.remove("change-color");
+        }, 3000);
+      });
     });
   </script>
 </html>
