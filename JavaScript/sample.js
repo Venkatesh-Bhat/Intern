@@ -15,10 +15,17 @@
 // }
 // helloBro(name);
 
+// let name = "Mike Tyson";
+// let greet = "Hello ";
+// function helloBro(nameArg, greeting) {
+//   window.alert(`${greeting} ${nameArg}`);
+// }
+// helloBro(name, greet);
+
 let name = "Mike Tyson";
 let greet = "Hello ";
 function helloBro(nameArg, greeting) {
-  window.alert(`${greeting} ${nameArg}`);
+  return `${greeting} ${nameArg}`;
 }
 
-helloBro(name, greet);
+console.log(helloBro(name, greet));
