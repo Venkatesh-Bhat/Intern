@@ -9,9 +9,16 @@
 
 // checkAge();
 
+// let name = "Mike Tyson";
+// function helloBro(nameArg) {
+//   window.alert(`Hello ${nameArg}`);
+// }
+// helloBro(name);
+
 let name = "Mike Tyson";
-function helloBro(nameArg) {
-  window.alert(`Hello ${nameArg}`);
+let greet = "Hello ";
+function helloBro(nameArg, greeting) {
+  window.alert(`${greeting} ${nameArg}`);
 }
 
-helloBro(name);
+helloBro(name, greet);
