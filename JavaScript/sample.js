@@ -22,10 +22,21 @@
 // }
 // helloBro(name, greet);
 
+// let name = "Mike Tyson";
+// let greet = "Hello ";
+// function helloBro(nameArg, greeting) {
+//   return `${greeting} ${nameArg}`;
+// }
+// console.log(helloBro(name, greet));
+
 let name = "Mike Tyson";
 let greet = "Hello ";
-function helloBro(nameArg, greeting) {
-  return `${greeting} ${nameArg}`;
+let age = window.prompt("Enter Age");
+function helloBro(nameArg, greeting, ageArg) {
+  if (ageArg < 12) {
+    return `${greeting} ${nameArg}, You are Innocent`;
+  }
+  return `${greeting} ${nameArg}, You are notorious!`;
 }
 
-console.log(helloBro(name, greet));
+console.log(helloBro(name, greet, age));
