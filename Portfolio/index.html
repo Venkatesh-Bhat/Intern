@@ -32,7 +32,8 @@
         <a href="#">Home</a>
         <a href="#about-line">About</a>
         <a href="#title-line">Skills</a>
-        <a id="contact" href="#">Contact</a>
+        <a href="#contact-me">Contact</a>
+        <a id="socials" href="#">Socials</a>
       </nav>
     </header>
     <section class="home">
@@ -67,7 +68,7 @@
         </div>
       </div>
       <hr id="title-line" />
-      <header id="title">Skills</header>
+      <header id="title"><h2>Skills</h2></header>
       <div class="skills">
         <span class="skill one" id="java">
           <svg
@@ -351,6 +352,19 @@
           </p>
         </span>
       </div>
+      <form class="contact-us" id="contact-me">
+        <h1>contact<span>Me</span></h1>
+        <label for="userName">Name:</label><br />
+        <input type="text" id="userName" name="name" /><br />
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" /><br />
+        <label for="feedback">Feedback:</label><br />
+        <textarea id="feedback" name="feedback"></textarea><br /><br />
+        <input type="submit" value="Submit" />
+      </form>
+      <footer>
+        <p>Copyright 2023 <span>Venkatesh Bhat</span>. All rights reserved.</p>
+      </footer>
       <aside class="social">
         <a><i class="bx bxl-facebook"></i></a>
         <a><i class="bx bxl-instagram"></i></a>
@@ -388,14 +402,13 @@
     });
 
     document.addEventListener("DOMContentLoaded", function () {
-      const changeBackgroundLink = document.querySelector("#contact");
+      const changeBackgroundLink = document.querySelector("#socials");
       const elementToChange = document.querySelector(".social");
 
       changeBackgroundLink.addEventListener("click", function (e) {
-        e.preventDefault(); // Prevent the default behavior of the anchor tag
-        elementToChange.classList.add("change-color"); // Add the CSS class to change the background
+        e.preventDefault();
+        elementToChange.classList.add("change-color");
 
-        // Set a timeout to remove the class after 5 seconds
         setTimeout(function () {
           elementToChange.classList.remove("change-color");
         }, 3000);

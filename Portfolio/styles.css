@@ -170,6 +170,7 @@ body {
   padding-top: 10px;
   margin: 50px 0 10px;
   font-family: "Source Code Pro";
+  text-align: center;
 }
 .skill header {
   font-size: 20px;
@@ -192,24 +193,17 @@ body {
   color: black;
   box-shadow: 0 0 20px #32f5f2;
 }
-/* .skill:nth-child(odd) {
-  border: 2pt solid #ef0107;
-  border-top: none;
-}
-.skill:nth-child(even) {
-  border: 2pt solid #7df9ff;
-  border-bottom: none;
-} */
+
 .one {
-  animation: slideLeft 7s ease forwards;
+  animation: slideLeft 15s ease forwards;
   animation-delay: 0s;
 }
 .three {
-  animation: slideRight 7s ease forwards;
+  animation: slideRight 15s ease forwards;
   animation-delay: 0s;
 }
 .two {
-  animation: slideDown 7s ease forwards;
+  animation: slideDown 15s ease forwards;
   animation-delay: 0s;
 }
 hr {
@@ -242,7 +236,7 @@ hr {
 }
 .progress-moved .java {
   background-color: #fff;
-  animation: progress 5s ease forwards;
+  animation: progress 20s ease forwards;
   animation-delay: 7s;
 }
 
@@ -260,7 +254,7 @@ hr {
 }
 .progress-moved .python {
   background-color: #fff;
-  animation: progressPy 5s ease forwards;
+  animation: progressPy 20s ease forwards;
   animation-delay: 7s;
 }
 
@@ -278,7 +272,7 @@ hr {
 }
 .progress-moved .react {
   background-color: #fff;
-  animation: progressReact 5s ease forwards;
+  animation: progressReact 20s ease forwards;
   animation-delay: 7s;
 }
 
@@ -296,7 +290,7 @@ hr {
 }
 .progress-moved .node {
   background-color: #fff;
-  animation: progressNode 5s ease forwards;
+  animation: progressNode 20s ease forwards;
   animation-delay: 7s;
 }
 
@@ -314,7 +308,7 @@ hr {
 }
 .progress-moved .cpp {
   background-color: #fff;
-  animation: progressCpp 5s ease forwards;
+  animation: progressCpp 20s ease forwards;
   animation-delay: 7s;
 }
 
@@ -332,7 +326,7 @@ hr {
 }
 .progress-moved .ruby {
   background-color: #fff;
-  animation: progressRuby 5s ease forwards;
+  animation: progressRuby 20s ease forwards;
   animation-delay: 7s;
 }
 
@@ -388,4 +382,61 @@ hr {
     transform: translateX(0px);
     opacity: 1;
   }
+}
+
+.contact-us h1 {
+  font-size: 44px;
+  font-family: "Source Code Pro";
+  text-align: center;
+}
+.contact-us h1 > span {
+  color: #32f5f2;
+}
+
+.contact-us {
+  width: 50%;
+  margin: 50px auto;
+}
+
+.contact-us label {
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #000;
+  color: #32f5f2;
+  border: 1pt solid #32f5f2;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0ef;
+  color: #000;
+  box-shadow: 0 0 40px #32f5f2;
+}
+
+textarea {
+  height: 200px;
+}
+
+footer {
+  text-align: center;
+  margin: 10px 0;
+}
+footer p span {
+  color: #32f5f2;
 }
