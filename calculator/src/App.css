@@ -1,12 +1,13 @@
 body {
-  background-color: #282c34;
+  background-color: #393e46;
 }
 
 .frame {
   width: 35rem;
   margin: 5rem auto 0;
-  border: 1pt solid #fff;
+  border: 1pt solid #393e46;
   padding: 1rem;
+  background-color: #222831;
   border-radius: 1.4rem;
 }
 
@@ -15,29 +16,29 @@ body {
   font-weight: 900;
   font-size: 4rem;
   text-align: center;
-  color: coral;
+  color: #00adb5;
 }
 
 .screen {
   width: 100%;
-  border: 1pt solid black;
-  background-color: #fff;
+  border: 1pt solid #222831;
+  background-color: #eeeeee;
   margin: 1rem auto;
-  border-radius: 1.4rem;
+  border-radius: 0.7rem;
 }
 
 .screen-row {
   padding: 0.2rem 0.5rem;
-  /* border-radius: 1.4rem; */
 }
 
 .screen-row input {
   width: 100%;
   border: none;
   font-size: 1.5rem;
+  color: #00adb5;
   text-align: end;
   margin: 0.4rem auto;
-  font-family: "Pixelify Sans", cursive;
+  font-family: "Croissant One", cursive;
 }
 
 .button-row {
@@ -48,11 +49,13 @@ body {
   width: 25%;
   font-family: cursive;
   font-size: 1rem;
-  background-color: #282c34;
-  color: aliceblue;
+  background-color: #393e46;
+  color: #00adb5;
   padding: 0.5rem;
+  /* border: none; */
 }
 .button-row input:hover {
-  color: #282c34;
-  background-color: aliceblue;
+  color: #393e46;
+  background-color: #eeeeee;
+  cursor: pointer;
 }

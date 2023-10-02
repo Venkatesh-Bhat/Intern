@@ -8,6 +8,7 @@ export default function OutputScreenRow(props) {
         readOnly
         value={props.value}
         placeholder={props.placeholder}
+        disabled
       />
     </div>
   );
