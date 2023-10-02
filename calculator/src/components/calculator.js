@@ -5,6 +5,10 @@ import OutputScreen from "./outputScreen";
 import Button from "./button";
 
 export default function Calculator() {
+  /* 2 States are used for question
+        One is used for proper calculation purpose (to fix eval problem)
+        Other is used to display the question to users (for readability purpose)
+    */
   const [dispQuestion, setDispQuestion] = useState("");
   const [question, setQuestion] = useState("");
   const [answer, setAnswer] = useState("");
@@ -37,7 +41,7 @@ export default function Calculator() {
         try {
           ansWer = eval(question);
         } catch (err) {
-          //   alert("Error: " + err);
+          console.log("Error: " + err);
           var flag = 1;
         }
         if (ansWer === undefined || flag === 1) {
@@ -56,6 +60,38 @@ export default function Calculator() {
         setQuestion((question) => question + "Math.sqrt(");
         setDispQuestion((dispQuestion) => dispQuestion + "√(");
         break;
+      case "*":
+        setQuestion((question) =>
+          !question.endsWith("*") ? question + "*" : question
+        );
+        setDispQuestion((dispQuestion) =>
+          !dispQuestion.endsWith("*") ? dispQuestion + "*" : dispQuestion
+        );
+        break;
+      case "/":
+        setQuestion((question) =>
+          !question.endsWith("/") ? question + "/" : question
+        );
+        setDispQuestion((dispQuestion) =>
+          !dispQuestion.endsWith("/") ? dispQuestion + "/" : dispQuestion
+        );
+        break;
+      case "+":
+        setQuestion((question) =>
+          !question.endsWith("+") ? question + "+" : question
+        );
+        setDispQuestion((dispQuestion) =>
+          !dispQuestion.endsWith("+") ? dispQuestion + "+" : dispQuestion
+        );
+        break;
+      case "-":
+        setQuestion((question) =>
+          !question.endsWith("-") ? question + "-" : question
+        );
+        setDispQuestion((dispQuestion) =>
+          !dispQuestion.endsWith("-") ? dispQuestion + "-" : dispQuestion
+        );
+        break;
       case "Ans":
         setQuestion((question) => question + answer);
         setDispQuestion((dispQuestion) =>
@@ -65,6 +101,7 @@ export default function Calculator() {
       default:
         setQuestion((question) => question + value);
         setDispQuestion((dispQuestion) => dispQuestion + value);
+        break;
     }
   }
 
