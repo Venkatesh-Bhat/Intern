@@ -1,0 +1,58 @@
+body {
+  background-color: #282c34;
+}
+
+.frame {
+  width: 35rem;
+  margin: 5rem auto 0;
+  border: 1pt solid #fff;
+  padding: 1rem;
+  border-radius: 1.4rem;
+}
+
+.calculator-title {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 900;
+  font-size: 4rem;
+  text-align: center;
+  color: coral;
+}
+
+.screen {
+  width: 100%;
+  border: 1pt solid black;
+  background-color: #fff;
+  margin: 1rem auto;
+  border-radius: 1.4rem;
+}
+
+.screen-row {
+  padding: 0.2rem 0.5rem;
+  /* border-radius: 1.4rem; */
+}
+
+.screen-row input {
+  width: 100%;
+  border: none;
+  font-size: 1.5rem;
+  text-align: end;
+  margin: 0.4rem auto;
+  font-family: "Pixelify Sans", cursive;
+}
+
+.button-row {
+  width: 100%;
+}
+
+.button-row input {
+  width: 25%;
+  font-family: cursive;
+  font-size: 1rem;
+  background-color: #282c34;
+  color: aliceblue;
+  padding: 0.5rem;
+}
+.button-row input:hover {
+  color: #282c34;
+  background-color: aliceblue;
+}
