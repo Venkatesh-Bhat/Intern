@@ -1,0 +1,41 @@
+.square {
+  width: 4rem;
+  height: 4rem;
+  padding: 0.2rem;
+  font-size: 35px;
+  font-weight: bold;
+  margin: 0.1rem;
+  background-color: antiquewhite;
+}
+.game {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  background-color: black;
+  color: azure;
+}
+.game-info {
+  text-align: center;
+  font-size: large;
+  margin: auto 1rem;
+}
+.game-info button {
+  width: max-content;
+  font-size: 0.8rem;
+  background-color: antiquewhite;
+  border: 1pt solid burlywood;
+}
+.row {
+  margin: 0;
+  display: flex;
+}
+li {
+  list-style-type: none;
+}
+ol {
+  margin: 0%;
+  padding: 0%;
+}
