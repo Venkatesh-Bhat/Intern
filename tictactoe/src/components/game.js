@@ -59,7 +59,9 @@ export default function Game() {
           onPlay={handlePlay}
           moveCount={currentMove}
         />
-        <button onClick={resetGame}>Reset</button>
+        <button className="reset" onClick={resetGame}>
+          Reset
+        </button>
       </div>
       <div className="game-info">
         <header>History</header>

@@ -12,6 +12,13 @@ export default function Board({ xIsNext, squares, onPlay, moveCount }) {
     status = "Current Move: " + (xIsNext ? "X" : "O");
   }
 
+  const statusStyle = {
+    color: "green",
+  };
+
+  if (status.includes("X")) statusStyle.color = "red";
+  else if (status.includes("O")) statusStyle.color = "blue";
+
   function handleUserInput(index, i, j) {
     if (squares[index] || calculateWinner(squares)) {
       return;
@@ -43,7 +50,9 @@ export default function Board({ xIsNext, squares, onPlay, moveCount }) {
 
   return (
     <>
-      <div className="move">{status}</div>
+      <div style={statusStyle} className="move">
+        {status}
+      </div>
       {sqRows}
     </>
   );

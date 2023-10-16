@@ -4,10 +4,10 @@ export default function Square(props) {
     color: "red",
   };
   if (props.value === "X") {
-    mod.border = "2pt solid #f00";
+    mod.border = "3pt solid #f00";
     mod.color = "red";
   } else if (props.value === "O") {
-    mod.border = "2pt solid #00F";
+    mod.border = "3pt solid #00F";
     mod.color = "blue";
   }
   return (
