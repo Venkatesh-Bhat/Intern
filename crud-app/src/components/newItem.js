@@ -3,10 +3,10 @@ import { useState } from "react";
 export default function NewItem({ handleClick }) {
   const [newTask, setTask] = useState("");
   return (
-    <>
+    <div className="create">
       <input
         type="text"
-        placeholder="Add item"
+        placeholder="Add item..."
         value={newTask}
         onChange={(e) => setTask(e.target.value)}
       />{" "}
@@ -16,8 +16,8 @@ export default function NewItem({ handleClick }) {
           handleClick(newTask);
         }}
       >
-        Add
+        <i className="bx bx-list-plus"></i>
       </button>
-    </>
+    </div>
   );
 }

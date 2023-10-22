@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+body {
+  background-color: #8ecae6;
+  color: #023047;
+}
+input[type="text"] {
+  border-radius: 0.4rem;
+  background-color: #eee;
+  color: #023047;
+  padding: 0.3rem;
+}
+input[type="checkbox"] {
+  appearance: none;
+  display: grid;
+  place-content: center;
+  font: inherit;
+  color: #023047;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid #219ebc;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+}
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.7em;
+  height: 0.7em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+  background-color: #023047;
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.todopage {
+  display: grid;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+.page header {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #023047;
+}
+.create {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.create input {
+  font-size: 1.4rem;
+  width: 50vh;
+}
+.create button {
+  font-size: 1.6rem;
+  padding: 0.4rem;
+  margin-left: 0.5rem;
+}
+button {
+  background-color: #ffb703;
+  border: none;
+  color: #023047;
 }
 
-.App-link {
-  color: #61dafb;
+.listItems {
+  list-style-type: none;
+  margin: 0;
+  padding: 0%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.listItems > li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+}
+.listItems button {
+  margin: 0 0.5rem;
+  height: fit-content;
+  padding: 0.2rem;
+  font-size: 1.4rem;
+}
+.task {
+  width: 20rem;
+  font-size: 1.4rem;
+  margin-right: 0.5rem;
+}
+.listItems input[type="text"] {
+  width: 20rem;
+  font-size: 1.4rem;
+}
+.delete {
+  background-color: red;
+}
+.save {
+  background-color: lightgreen;
 }

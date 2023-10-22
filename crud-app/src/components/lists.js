@@ -2,8 +2,7 @@ import { useState } from "react";
 
 export default function ListLayout({ items, editHandler, deleteHandler }) {
   return (
-    <ul>
-      {" "}
+    <ul className="listItems">
       {items.map((item) => (
         <li key={item.id}>
           <List
@@ -27,26 +26,30 @@ function List({ item, onEditClicked, onDeleteClicked }) {
           type="text"
           value={item.task}
           onChange={(e) => onEditClicked({ ...item, task: e.target.value })}
-        />{" "}
+        />
         <button
+          className="save"
           onClick={() => {
             setIsEdit(false);
           }}
         >
-          Save
+          <i className="bx bx-check"></i>
         </button>
       </>
     );
   } else {
     content = (
       <>
-        {item.task}{" "}
+        <label htmlFor={item.task} className="task">
+          {item.task}
+        </label>
         <button
+          className="edit"
           onClick={() => {
             setIsEdit(true);
           }}
         >
-          Edit
+          <i className="bx bxs-edit-alt"></i>
         </button>
       </>
     );
@@ -54,11 +57,15 @@ function List({ item, onEditClicked, onDeleteClicked }) {
   return (
     <>
       <input
+        id={item.task}
         type="checkbox"
         checked={item.done}
         onChange={(e) => onEditClicked({ ...item, done: e.target.checked })}
       />
-      {content} <button onClick={() => onDeleteClicked(item)}>Delete</button>
+      {content}
+      <button className="delete" onClick={() => onDeleteClicked(item)}>
+        <i className="bx bxs-trash"></i>
+      </button>
     </>
   );
 }
